@@ -1,0 +1,76 @@
+chebi_id,chebi_name,definition,is_drug_seed,drug_name,parent_chebi_id
+CHEBI:5931,insulin (human),"An insulin that is produced in the pancreas and involved in regulating the metabolism of carbohydrates (particularly glucose) and fats. Commonly thought of as a protein, it consists of two peptide chains, one containing 21 amino acid residues and the other containing 30; the chains are joined togeth",True,Insulin,CHEBI:145810
+CHEBI:35358,sulfonamide,An amide of a sulfonic acid RS(=O)<small><sub>2</sub></small>NR'<small><sub>2</sub></small>.,False,,CHEBI:33552
+CHEBI:38313,diazines,Any organic heterocyclic compound containing a benzene ring in which two of the C-H fragments have been replaced by isolobal nitrogens (the diazine parent structure).,False,,CHEBI:38101
+CHEBI:6801,metformin,A member of the class of guanidines that is biguanide the carrying two methyl substituents at position 1.,True,Metformin,CHEBI:24436
+CHEBI:15841,polypeptide,A peptide containing ten or more amino acid residues.,False,,CHEBI:33839
+CHEBI:33655,aromatic compound,A cyclically conjugated molecular entity with a stability (due to delocalization) significantly greater than that of a hypothetical localized structure (e.g. Kekulé structure) is said to possess aromatic character.,False,,CHEBI:33595
+CHEBI:33582,carbon group molecular entity,,False,,CHEBI:33675
+CHEBI:25693,organic heteromonocyclic compound,,False,,CHEBI:33670
+CHEBI:145810,insulin,"A peptide hormone which consists of two polypeptide chains, A- and B- chains which are linked together by disulfide bonds. The amino acid sequence of insulin varies across species and certain segments of the molecule are highly conserved. In most species, the A chain consists of 21 amino acids and t",False,,CHEBI:25905
+CHEBI:35381,monosaccharide,Parent monosaccharides are polyhydroxy aldehydes H[CH(OH)]<small><sub><em>n</em></sub></small>C(=O)H or polyhydroxy ketones H‒[CHOH]<small><sub><em>n</em></sub></small>‒C(=O)[CHOH]<small><sub><em>m</em></sub></small>‒H with three or more carbon atoms. The generic term 'monosaccharide' (as opposed to,False,,CHEBI:16646
+CHEBI:24436,guanidines,Any organonitrogen compound containing a carbamimidamido (guanidino) group. Guanidines have the general structure (R<small><sup>1</small></sup>R<small><sup>2</small></sup>N)(R<small><sup>3</small></sup>R<small><sup>4</small></sup>N)C=N-R<small><sup>5</small></sup> and are related structurally to ami,False,,CHEBI:35352
+CHEBI:23449,cyclic peptide,,False,,CHEBI:16670
+CHEBI:33832,organic cyclic compound,Any organic molecule that consists of atoms connected in the form of a ring.,False,,CHEBI:72695
+CHEBI:36962,organochalcogen compound,An organochalcogen compound is a compound containing at least one carbon-chalcogen bond.,False,,CHEBI:33304
+CHEBI:62733,aromatic amide,An amide in which the amide linkage is bonded directly to an aromatic system.,False,,CHEBI:33659
+CHEBI:33304,chalcogen molecular entity,Any p-block molecular entity containing a chalcogen.,False,,CHEBI:33675
+CHEBI:36357,polyatomic entity,Any molecular entity consisting of more than one atom.,False,,CHEBI:23367
+CHEBI:33552,sulfonic acid derivative,,False,,CHEBI:33424
+CHEBI:24532,organic heterocyclic compound,A cyclic compound having as ring members atoms of carbon and at least of one other element.,False,,CHEBI:5686
+CHEBI:15693,aldose,"Aldehydic parent sugars (polyhydroxy aldehydes H[CH(OH)]<small><sub><em>n</em></sub></small>C(=O)H, <em>n</em> ≥ 2) and their intramolecular hemiacetals.",False,,CHEBI:35381
+CHEBI:10070,Xanthoxylin,,True,Sitagliptin,CHEBI:33308
+CHEBI:51143,nitrogen molecular entity,,False,,CHEBI:33302
+CHEBI:33261,organosulfur compound,An organosulfur compound is a compound containing at least one carbon-sulfur bond.,False,,CHEBI:36962
+CHEBI:23367,molecular entity,"Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.",False,,CHEBI:24431
+CHEBI:33659,organic aromatic compound,,False,,CHEBI:33832
+CHEBI:26421,pyridines,Any organonitrogen heterocyclic compound based on a pyridine skeleton and its substituted derivatives.,False,,CHEBI:38101
+CHEBI:17234,glucose,An aldohexose used as a source of energy and metabolic intermediate.,True,Glucose,CHEBI:33917
+CHEBI:32988,amide,An amide is a derivative of an oxoacid R<small><sub><em>k</em></sub></small>E(=O)<small><sub><em>l</em></sub></small>(OH)<small><sub><em>m</em></sub></small> (<em>l</em> ≠ 0) in which an acidic hydroxy group has been replaced by an amino or substituted amino group.,False,,CHEBI:51143
+CHEBI:25905,peptide hormone,"Any peptide with hormonal activity in animals, whether endocrine, neuroendocrine, or paracrine.",False,,CHEBI:16670
+CHEBI:38106,organosulfur heterocyclic compound,,False,,CHEBI:33261
+CHEBI:33917,aldohexose,A hexose with a (potential) aldehyde group at one end.,False,,CHEBI:18133
+CHEBI:33839,macromolecule,"A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.",False,,CHEBI:36357
+CHEBI:33670,heteromonocyclic compound,,False,,CHEBI:5686
+CHEBI:38314,pyrazines,,False,,CHEBI:38313
+CHEBI:16670,peptide,"Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from α-amino acids, but it includes those",False,,CHEBI:50047
+CHEBI:35622,thiazolidines,,False,,CHEBI:38106
+CHEBI:33285,heteroorganic entity,A heteroorganic entity is an organic molecular entity in which carbon atoms or organic groups are bonded directly to one or more heteroatoms.,False,,CHEBI:50860
+CHEBI:33241,oxoacid derivative,,False,,CHEBI:37577
+CHEBI:33579,main group molecular entity,"A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table.",False,,CHEBI:23367
+CHEBI:76983,N-sulfonylurea,"A urea in which one of the hydrogens attached to a nitrogen of the urea group is replaced by a sulfonyl group. The <em>N</em>-sulfonylurea moiety is a key group in various herbicides, as well as in a number of antidiabetic drugs used in the management of type 2 diabetis mellitus.",False,,CHEBI:47857
+CHEBI:36586,carbonyl compound,"Any compound containing the carbonyl group, C=O. The term is commonly used in the restricted sense of aldehydes and ketones, although it actually includes carboxylic acids and derivatives.",False,,CHEBI:36963
+CHEBI:26835,sulfur molecular entity,,False,,CHEBI:33304
+CHEBI:36963,organooxygen compound,An organochalcogen compound containing at least one carbon-oxygen bond.,False,,CHEBI:36962
+CHEBI:33860,aromatic amine,An amino compound in which the amino group is linked directly to an aromatic system.,False,,CHEBI:50047
+CHEBI:24431,chemical entity,"A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.",False,,
+CHEBI:29347,monocarboxylic acid amide,A carboxamide derived from a monocarboxylic acid.,False,,CHEBI:37622
+CHEBI:33302,pnictogen molecular entity,A p-block molecular entity containing any pnictogen.,False,,CHEBI:33675
+CHEBI:24533,heterodetic cyclic peptide,"A heterodetic cyclic peptide is a peptide consisting only of amino-acid residues, but in which the linkages forming the ring are not solely peptide bonds; one or more is an isopeptide, disulfide, ester, or other bond.",False,,CHEBI:23449
+CHEBI:37577,heteroatomic molecular entity,A molecular entity consisting of two or more chemical elements.,False,,CHEBI:36357
+CHEBI:33256,primary amide,A derivative of an oxoacid R<small><sub><em>k</em></sub></small>E(=O)<small><sub><em>l</em></sub></small>(OH)<small><sub><em>m</em></sub></small> (<em>l</em> ≠ 0) in which an acidic hydroxy group has been replaced by an amino or substituted amino group.,False,,CHEBI:32988
+CHEBI:33675,p-block molecular entity,A main group molecular entity that contains one or more atoms of a p-block element.,False,,CHEBI:33579
+CHEBI:33424,sulfur oxoacid derivative,,False,,CHEBI:33241
+CHEBI:50047,organic amino compound,"A compound formally derived from ammonia by replacing one, two or three hydrogen atoms by organyl groups.",False,,CHEBI:50860
+CHEBI:78616,carbohydrates and carbohydrate derivatives,"Any organooxygen compound that is a polyhydroxy-aldehyde or -ketone, or a compound derived from one. Carbohydrates contain only carbon, hydrogen and oxygen and usually have an empirical formula C<small><sub><em>m</em></sub></small>(H<small><sub>2</sub></small>O)<small><sub><em>n</em></sub></small>; ",False,,CHEBI:36963
+CHEBI:25806,oxygen molecular entity,,False,,CHEBI:33304
+CHEBI:50122,rosiglitazone,,True,Rosiglitazone,CHEBI:50990
+CHEBI:35352,organonitrogen compound,Any heteroorganic entity containing at least one carbon-nitrogen bond.,False,,CHEBI:51143
+CHEBI:18133,hexose,Any six-carbon monosaccharide which in its linear form contains either an aldehyde group at position 1 (aldohexose) or a ketone group at position 2 (ketohexose).,False,,CHEBI:35381
+CHEBI:5391,glucagon,"A 29-amino acid peptide hormone consisting of His, Ser, Gln, Gly, Thr, Phe, Thr, Ser, Asp, Tyr, Ser, Lys, Tyr, Leu, Asp, Ser, Arg, Arg, Ala, Gln, Asp, Phe, Val, Gln, Trp, Leu, Met, Asn and Thr residues joined in sequence.",True,Glucagon,CHEBI:25905
+CHEBI:33661,monocyclic compound,,False,,CHEBI:33595
+CHEBI:35701,ester,"A compound formally derived from an oxoacid R<small><sub><em>k</em></sub></small>E(=O)<small><sub><em>l</em></sub></small>(OH)<small><sub><em>m</em></sub></small> (<em>l</em> > 0) and an alcohol, phenol, heteroarenol, or enol by linking with formal loss of water from an acidic hydroxy group of the f",False,,CHEBI:36963
+CHEBI:47857,ureas,,False,,CHEBI:33256
+CHEBI:36587,organic oxo compound,"Organic compounds containing an oxygen atom, =O, doubly bonded to carbon or another element.",False,,CHEBI:72695
+CHEBI:38207,aminopyridine,Compounds containing a pyridine skeleton substituted by one or more amine groups.,False,,CHEBI:33860
+CHEBI:25367,molecule,Any polyatomic entity that is an electrically neutral entity consisting of more than one atom.,False,,CHEBI:36357
+CHEBI:33595,cyclic compound,Any molecule that consists of a series of atoms joined together to form a ring.,False,,CHEBI:25367
+CHEBI:33308,carboxylic ester,"An ester of a carboxylic acid, R<small><sup>1</small></sup>C(=O)OR<small><sup>2</small></sup>, where R<small><sup>1</small></sup> = H or organyl and R<small><sup>2</small></sup> = organyl.",False,,CHEBI:36586
+CHEBI:38101,organonitrogen heterocyclic compound,Any organonitrogen compound containing a cyclic component with nitrogen and at least one other element as ring member atoms.,False,,CHEBI:35352
+CHEBI:50990,thiazolidinediones,"A thiadiazolidine in which the 1,3-thiazolidine ring is substituted by two oxo groups.",False,,CHEBI:35622
+CHEBI:72695,organic molecule,Any molecule that consists of at least one carbon atom as part of the electrically neutral entity.,False,,CHEBI:50860
+CHEBI:16646,carbohydrate,"Any member of the class of organooxygen compounds that is a polyhydroxy-aldehyde or -ketone or a lactol resulting from their intramolecular condensation (monosaccharides); substances derived from these by reduction of the carbonyl group (alditols), by oxidation of one or more hydroxy groups to affor",False,,CHEBI:78616
+CHEBI:37622,carboxamide,"An amide of a carboxylic acid, having the structure RC(=O)NR<small><sub>2</sub></small>. The term is used as a suffix in systematic name formation to denote the ‒C(=O)NH<small><sub>2</sub></small> group including its carbon atom.",False,,CHEBI:36963
+CHEBI:5686,heterocyclic compound,A cyclic compound having as ring members atoms of at least two different elements.,False,,CHEBI:33595
+CHEBI:5384,glipizide,"An <em>N</em>-sulfonylurea that is glyburide in which the (5-chloro-2-methoxybenzoyl group is replaced by a (5-methylpyrazin-2-yl)carbonyl group. An oral hypoglycemic agent, it is used in the treatment of type 2 diabetes mellitus.",True,Glipizide,CHEBI:76983
+CHEBI:50860,organic molecular entity,Any molecular entity that contains carbon.,False,,CHEBI:33582

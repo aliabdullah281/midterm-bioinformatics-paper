@@ -1,0 +1,78 @@
+======================================================================
+DiabetesKG Validation Report
+======================================================================
+
+Nodes total  : 1,604
+Edges total  : 3,350
+
+────────────────────────────────────────────────────────────
+CHECK 1: Schema Validation
+────────────────────────────────────────────────────────────
+  Schema-conformant edges : 868
+  Schema violations       : 0
+
+────────────────────────────────────────────────────────────
+CHECK 2: Referential Integrity
+────────────────────────────────────────────────────────────
+  Edges with missing source node : 0
+  Edges with missing target node : 0
+
+────────────────────────────────────────────────────────────
+CHECK 3: Diabetes Seed Gene Coverage
+────────────────────────────────────────────────────────────
+  Seed genes expected  : 15
+  Seed genes found     : 15  →  ['ABCC8', 'FOXO1', 'GCK', 'HNF1A', 'HNF4A', 'INS', 'INSR', 'IRS1', 'IRS2', 'KCNJ11', 'PDX1', 'PIK3R1', 'PPARG', 'SLC2A2', 'TCF7L2']
+  Seed genes missing   : 0  →  []
+
+────────────────────────────────────────────────────────────
+CHECK 4: Connectivity
+────────────────────────────────────────────────────────────
+  Connected components : 4
+  Largest component    : 1,518 nodes (94.6%)
+  Isolated nodes       : 1
+
+────────────────────────────────────────────────────────────
+CHECK 5: Scale-free Degree Distribution (log-log R²)
+────────────────────────────────────────────────────────────
+  Power-law exponent γ : 1.596  (expected ≈ 2-3 for scale-free)
+  Log-log R²           : 0.765  (≥0.80 suggests scale-free)
+
+────────────────────────────────────────────────────────────
+CHECK 6: Known Association Spot Checks
+────────────────────────────────────────────────────────────
+  [FAIL] Metformin → Diabetes (0 edges found)
+  [FAIL] Metformin → Diabetes (by name) (0 edges found)
+  [FAIL] INS gene → Disease (0 edges found)
+  [PASS] PPARG → GO:biological_process (75 edges found)
+  [PASS] HPO phenotype hierarchy (is_a) (9 edges found)
+
+────────────────────────────────────────────────────────────
+CHECK 7: Duplicate Detection
+────────────────────────────────────────────────────────────
+  Duplicate node_ids   : 0
+  Duplicate (src, tgt, type) edges : 0
+
+────────────────────────────────────────────────────────────
+CHECK 8: Full Summary Statistics
+────────────────────────────────────────────────────────────
+  Node type breakdown:
+    BiologicalProcess                1,114
+    MolecularFunction                  225
+    CellularComponent                  150
+    Chemical                            75
+    Gene                                15
+    Protein                             15
+    Phenotype                           10
+
+  Edge type breakdown:
+    go_term_is_a                               2,338
+    protein_has_biological_process               456
+    protein_has_molecular_function               205
+    go_term_part_of                              144
+    protein_located_in_component                 109
+    chemical_is_a_subclass_of                     74
+    gene_encodes_protein                          15
+    phenotype_is_a                                 9
+
+  Graph density : 0.001303
+  Average degree : 4.18

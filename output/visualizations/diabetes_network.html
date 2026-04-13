@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:PPARG", "label": "PPARG", "shape": "dot", "size": 20, "title": "Gene: PPARG"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:IRS2", "label": "IRS2", "shape": "dot", "size": 20, "title": "Gene: IRS2"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P06213", "label": "INSR", "shape": "dot", "size": 10, "title": "Protein: INSR"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:Q9NQB0", "label": "TCF7L2", "shape": "dot", "size": 10, "title": "Protein: TCF7L2"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P11168", "label": "SLC2A2", "shape": "dot", "size": 10, "title": "Protein: SLC2A2"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P20823", "label": "HNF1A", "shape": "dot", "size": 10, "title": "Protein: HNF1A"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:FOXO1", "label": "FOXO1", "shape": "dot", "size": 20, "title": "Gene: FOXO1"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:ABCC8", "label": "ABCC8", "shape": "dot", "size": 20, "title": "Gene: ABCC8"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P35557", "label": "GCK", "shape": "dot", "size": 10, "title": "Protein: GCK"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P27986", "label": "PIK3R1", "shape": "dot", "size": 10, "title": "Protein: PIK3R1"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:IRS1", "label": "IRS1", "shape": "dot", "size": 20, "title": "Gene: IRS1"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:TCF7L2", "label": "TCF7L2", "shape": "dot", "size": 20, "title": "Gene: TCF7L2"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P01308", "label": "INS", "shape": "dot", "size": 10, "title": "Protein: INS"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P52945", "label": "PDX1", "shape": "dot", "size": 10, "title": "Protein: PDX1"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:GCK", "label": "GCK", "shape": "dot", "size": 20, "title": "Gene: GCK"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:HNF4A", "label": "HNF4A", "shape": "dot", "size": 20, "title": "Gene: HNF4A"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:HNF1A", "label": "HNF1A", "shape": "dot", "size": 20, "title": "Gene: HNF1A"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:Q14654", "label": "KCNJ11", "shape": "dot", "size": 10, "title": "Protein: KCNJ11"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:SLC2A2", "label": "SLC2A2", "shape": "dot", "size": 20, "title": "Gene: SLC2A2"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P37231", "label": "PPARG", "shape": "dot", "size": 10, "title": "Protein: PPARG"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:Q12778", "label": "FOXO1", "shape": "dot", "size": 10, "title": "Protein: FOXO1"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P41235", "label": "HNF4A", "shape": "dot", "size": 10, "title": "Protein: HNF4A"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:KCNJ11", "label": "KCNJ11", "shape": "dot", "size": 20, "title": "Gene: KCNJ11"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:PIK3R1", "label": "PIK3R1", "shape": "dot", "size": 20, "title": "Gene: PIK3R1"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:INSR", "label": "INSR", "shape": "dot", "size": 20, "title": "Gene: INSR"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:Q09428", "label": "ABCC8", "shape": "dot", "size": 10, "title": "Protein: ABCC8"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:PDX1", "label": "PDX1", "shape": "dot", "size": 20, "title": "Gene: PDX1"}, {"color": "#E41A1C", "font": {"color": "white"}, "id": "Gene:INS", "label": "INS", "shape": "dot", "size": 20, "title": "Gene: INS"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:Q9Y4H2", "label": "IRS2", "shape": "dot", "size": 10, "title": "Protein: IRS2"}, {"color": "#FF7F00", "font": {"color": "white"}, "id": "Protein:P35568", "label": "IRS1", "shape": "dot", "size": 10, "title": "Protein: IRS1"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Gene:PPARG", "title": "gene_encodes_protein", "to": "Protein:P37231", "width": 1}, {"arrows": "to", "from": "Gene:IRS2", "title": "gene_encodes_protein", "to": "Protein:Q9Y4H2", "width": 1}, {"arrows": "to", "from": "Gene:FOXO1", "title": "gene_encodes_protein", "to": "Protein:Q12778", "width": 1}, {"arrows": "to", "from": "Gene:ABCC8", "title": "gene_encodes_protein", "to": "Protein:Q09428", "width": 1}, {"arrows": "to", "from": "Gene:IRS1", "title": "gene_encodes_protein", "to": "Protein:P35568", "width": 1}, {"arrows": "to", "from": "Gene:TCF7L2", "title": "gene_encodes_protein", "to": "Protein:Q9NQB0", "width": 1}, {"arrows": "to", "from": "Gene:GCK", "title": "gene_encodes_protein", "to": "Protein:P35557", "width": 1}, {"arrows": "to", "from": "Gene:HNF4A", "title": "gene_encodes_protein", "to": "Protein:P41235", "width": 1}, {"arrows": "to", "from": "Gene:HNF1A", "title": "gene_encodes_protein", "to": "Protein:P20823", "width": 1}, {"arrows": "to", "from": "Gene:SLC2A2", "title": "gene_encodes_protein", "to": "Protein:P11168", "width": 1}, {"arrows": "to", "from": "Gene:KCNJ11", "title": "gene_encodes_protein", "to": "Protein:Q14654", "width": 1}, {"arrows": "to", "from": "Gene:PIK3R1", "title": "gene_encodes_protein", "to": "Protein:P27986", "width": 1}, {"arrows": "to", "from": "Gene:INSR", "title": "gene_encodes_protein", "to": "Protein:P06213", "width": 1}, {"arrows": "to", "from": "Gene:PDX1", "title": "gene_encodes_protein", "to": "Protein:P52945", "width": 1}, {"arrows": "to", "from": "Gene:INS", "title": "gene_encodes_protein", "to": "Protein:P01308", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"shape": "dot", "scaling": {"min": 10, "max": 30}}, "edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.5}}, "smooth": true}, "physics": {"enabled": true, "stabilization": {"iterations": 100}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
