@@ -1,6 +1,7 @@
 # DiabetesKG: Biomedical Knowledge Graph Construction Pipeline (Midterm Paper) 
 
 Live Demo: Bioinformatics Knowledge Grap  ([URL](https://bioinformatics-knowledge-graph.vercel.app/)).
+
 This repository contains a modular, step-by-step pipeline designed to construct a comprehensive Biomedical Knowledge Graph (KG) focused on
 Diabetes. The project integrates diverse data sources—including genomic, chemical, and ontological data—to create an interoperable graph 
 structure for clinical reasoning and research.
