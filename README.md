@@ -1,6 +1,6 @@
 # DiabetesKG: Biomedical Knowledge Graph Construction Pipeline (Midterm Paper) 
 
-Live Demo: Bioinformatics Knowledge Grap  ([URL](https://bioinformatics-knowledge-graph.vercel.app/)).
+Live Demo: Bioinformatics Knowledge Grap  ([Website URL](https://bioinformatics-knowledge-graph.vercel.app/)).
 
 This repository contains a modular, step-by-step pipeline designed to construct a comprehensive Biomedical Knowledge Graph (KG) focused on
 Diabetes. The project integrates diverse data sources—including genomic, chemical, and ontological data—to create an interoperable graph 
@@ -32,7 +32,7 @@ Contains all data and visual artifacts produced by the pipeline.
 - `visualizations/`: PNG and HTML exports showing degree distributions, schema diagrams, and network subgraphs.
 
 ## 3 Web Application (`/output/extracted/biokg_contents/biokg`)
-A Next.js-based frontend application designed to interactively explore the generated Knowledge Graph ([URL](https://bioinformatics-knowledge-graph.vercel.app/)).
+A Next.js-based frontend application designed to interactively explore the generated Knowledge Graph ([Website URL](https://bioinformatics-knowledge-graph.vercel.app/)).
 
 - Uses `kg_output.json` to render interactive network graphs.
 - Built with TypeScript and Tailwind CSS for a modern, responsive research interface.
