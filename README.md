@@ -46,28 +46,28 @@ A Next.js-based frontend application designed to used to power the Vercel Deploy
 
 
 ## 🚀 Getting Started
-** Prerequisites ** 
+<b> Prerequisites </b> 
 
   Python 3.8+
   Node.js (for the web dashboard)
   Protegé (for ontology editing)
 
 
-** Running the Pipeline **
+<b> Running the Pipeline </b>
 To generate the knowledge graph from scratch, ensure you have Python 3.8+ installed, then run
 
 ```bash
 python pipeline/run_pipeline.py
 ```
 
-** Local Web Development **
+<b> Local Web Development <b>
 To run the visualization dashboard locally:
   1. Navigate to the app directory:
      ```bash
      cd output/extracted/biokg_contents/biokg
      ```
   2. Install dependencies and start:
-    ```bash
+     ```bash
      npm install && npm run dev
      ```
 
